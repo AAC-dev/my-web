@@ -1,0 +1,454 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+ 
+}
+/* General */ 
+html{
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior:smooth;
+}
+
+
+.App {
+  text-align: center;
+  overflow: auto;
+  overflow-y: hidden;
+
+}
+
+.container-fluid{
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */ 
+
+.header{
+  position: relative;
+  display: flex;
+  font-family:Georgia, Times, Times New Roman, serif;
+  min-height: 100%;
+  height: 80vh;
+  width: 100vw;
+  min-width: 100%;
+  overflow: hidden;
+  justify-content: center;
+}
+.header-video-bg{
+  min-width: 100%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  overflow: hidden;
+  background-color: rgba(0,0,0,.5);
+}
+.header .header-typorgaphy{
+  padding-top:4rem;
+  display:flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:  rgba(248, 237, 136, 0.74);
+}
+.header-typography h1{
+
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+  font-size: 2.5rem;
+}
+.header-typography h3{
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-top: 3em;
+}
+
+
+.navigation-bar a  i{
+  margin-right: 1.4em;
+  font-weight: 800;
+  font-size: 1.5rem;
+  z-index: 20;
+  color:  rgba(248, 237, 136, 0.74);
+}
+
+
+
+/* About */ 
+
+
+.about{
+  font-family:Georgia, Times, Times New Roman, serif;
+  box-sizing: border-box;
+  background-color: black;
+  color:  rgba(248, 237, 136, 0.74);
+  min-width: 100%;
+  min-height: 65vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  align-content: center;
+  position: relative;
+  padding-top: .1em;
+}
+.about .header{
+  justify-content: center;
+  height: 1rem;
+  width: 1em;
+  margin-top: 1em;
+}
+.about-header{
+  font-weight: 600;
+  letter-spacing: 0.6rem;
+}
+.about-header h1{ 
+  margin: .5em 0 .5em 0;
+}
+.about li{
+  list-style: none;
+  margin-top: 1em;
+}
+.about .skills{
+  line-height: 1.1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color:  rgba(248, 237, 136, 0.74);
+  position: absolute;
+  right: 2rem ;
+  top:7rem;
+}
+
+.about .block-quote{
+  font-size: 0.8rem;
+  padding:1em 3em 0 0;
+  position: absolute;
+  bottom: 2rem;
+}
+.about .quote::before{
+  content: '\201d';
+  position: absolute;
+  margin-left: -.4em;
+  margin-top: -.4em;
+}
+
+.about .quote::after {
+	content: '\201d';
+  position: absolute;
+  margin-right: -.4em;
+  margin-top: .8em;
+}
+.quote-by{
+  font-size: 0.7rem;
+  margin: -1em 11em 0 0 ;
+  position: absolute;
+}
+
+/* Contact  */
+
+.contact{
+  font-family:Georgia, Times, Times New Roman, serif;
+  box-sizing: border-box;
+  background-color: rgba(248, 237, 136, 0.5);
+  color: #000000;
+  min-height: 70vh;
+  min-width: 100%;
+  width: 100%;
+  height: 100%;
+  padding-top: 0.1em;
+  padding-bottom: 0.8em;
+}
+ .logo{
+  background-image: url(./static/logo.png);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  width: 10rem;
+  height:10rem;
+  border-radius: 35%;
+  margin:auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.fields input{
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1rem; 
+  color: #595f6e;
+  border-bottom: 1px solid #7a88aa;
+}
+
+
+.contact .input-field{
+  margin: 1em 0 0 2em;
+}
+
+.input-field::after {
+  background-color: rgba(248, 237, 136, 0.5);
+  border-bottom: 1px solid #7a88aa;
+}
+
+.btn-dark{
+  margin-top: 1rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  color: rgba(248, 237, 136, 0.74);
+  background-color: #000000;
+  border: none;
+  outline: none;
+}
+.btn-dark::after{
+  margin-top: 1em;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  color: rgba(248, 237, 136, 0.74);
+  background-color: #000000;
+  border: none;
+  outline: none;
+}
+
+/* Footer */
+
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  min-height: 20vh;
+  min-width: 100%;
+  width: 100%;
+  background-color: black;
+  overflow-y:hidden;
+  position: absolute;
+  align-content: center;
+  justify-content: center;
+}
+
+.footer .copyright{
+  font-family:Georgia, Times, Times New Roman, serif;
+  color:  rgba(248, 237, 136, 0.74);
+  font-size: 1.2rem;
+  position: absolute;
+  top: 1.5rem;
+  left:1rem;
+}
+.footer .icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: .4em; 
+  position: absolute;
+  top: 1.5rem;
+
+}
+
+.footer .icons a{
+  width: 100%;
+  color: rgba(248, 237, 136, 0.74);
+  display: flex;
+  font-size: 1.4rem;
+  align-items: center;
+  justify-content: center;
+  margin-right:.4em;
+} 
+
+
+    /* Responsive video */
+
+
+@media (min-aspect-ratio:16/9){
+  .video{      
+      width:100%;
+      height: auto;
+    }}
+@media(max-aspect-ratio:16/9){
+  .video{        
+    width: auto;
+      height: 100%;
+    }}
+  
+
+    /* Small devices (landscape phones, 576px and up)*/
+
+
+  @media (min-width: 375px) { 
+    
+    .header-typography h1{
+      margin-top: 10em;
+    }
+    .header-typography h3{
+      margin-top: 3em;
+    }
+    .about {
+      min-height: 50vh;
+    }
+    .about .header{
+      height: 1rem;
+      width: 100%;
+      margin-left: 1em;
+      margin-top: 1em;      
+    }
+    .about-header{
+      font-size: 2rem;
+    }
+    .about .skills{
+      line-height: 1.1rem;
+      font-size: 1rem;
+      font-weight: 400;
+      color:  rgba(248, 237, 136, 0.74);
+      position: absolute;
+      left: 0rem ;
+      top:4rem;
+      right: 0;
+    }
+    .footer{
+      padding-top: 1em;
+      min-height: 14vh;
+    }
+    .footer .icons i{   
+      font-size: 1.5rem;    
+      margin-right: 1em
+    } 
+
+   }
+    
+    /*  Medium devices (tablets, 768px and up) */
+  @media (min-width: 568px) {
+    .header{
+      height: 90vh;
+    }
+    
+    .header .header-typography .main-header{
+      font-size: 3.5rem;
+      margin-top: 3rem;
+    }
+    .header  .header-typography h3{
+      font-size: 2rem;
+      margin-top: 3em;
+    }
+    .about{
+      height: 100%;
+      width: 100%;
+      height: 80vh;
+    }
+
+
+    .about .header{
+      height: 1rem;
+      width: 1rem;
+      margin-left: 1em;
+      margin-top: 1em;
+    }
+
+    .about .skills{
+      line-height: 1.1rem;
+      font-size: 1rem;
+      font-weight: 400;
+      color:  rgba(248, 237, 136, 0.74);
+      position: absolute;
+      left: 0rem ;
+      top:5rem;
+      right: 0;
+    }
+
+    .contact{
+      min-height: 55vh;
+      width: 100%;
+      margin-bottom: -1em
+    }
+
+    .footer{
+      height: 14vh;
+      padding-top: 1em
+    }
+    .footer .copyright{
+      align-self: flex-start;
+    }
+
+    .footer .icons i{   
+      font-size: 1.5rem;
+    } 
+
+   }
+    @media (min-width:767px){
+     
+      .about {
+        min-height:40vh;
+    }
+    .footer{ 
+      height: 30vh;
+    }
+  }
+
+    /*  Large devices (desktops, 992px and up) */
+
+
+  @media (min-width: 992px) { 
+   
+
+    .about{
+      padding-top: 1em;
+      height: 40vh;
+    }
+    .about-header h1{
+      margin-top:1em;
+      font-size: 2.8rem;
+     font-weight: 700;
+     letter-spacing: .3rem;
+    }
+
+
+    .about .skills{
+      line-height: 1.1rem;
+      font-size: 1rem;
+      top:7rem;
+    }
+
+    .footer{
+      height: 14vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer .copyright{
+      font-size: 2rem;
+      top:2rem;
+
+    }
+   .footer .icons i{
+      font-size: 2rem;
+      top:2rem;
+    } 
+   }
+    
+    /*  Extra large devices (large desktops, 1200px and up) */
+
+  @media (min-width: 1200px) 
+  {
+    .header .navigation-bar{
+      flex-direction: flex-start;
+    }
+    .header .header-typography h1{
+      margin-top:6em;
+    }
+    .header .navigation-bar i {
+      font-size: 2.5rem;
+    }
+    .about{
+      min-height: 50vh;
+    } 
+    .about-header h1{
+      margin: .5em 0 .5em 0;
+    }
+      .about .skills{
+      margin-top:-1.2em;
+      font-size: 1.3rem;
+    }
+
+      .icons{
+        font-size: 2rem;
+        margin-top:1em;
+      }
+    }
